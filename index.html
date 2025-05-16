@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="estilos_inicio.css">
 </head>
 
-<body>
+<body> 
+    <!-- Ten en cuenta poner tu correo electronico en el formulario de contacto para que te lleguen 
+     los correos electronicos, si no lo haces no te llegaran los correos electronicos. en la linea 152 -->
+
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
@@ -146,12 +149,15 @@
 
         <div class="form-content">
             <h2>Suscribete a nuestras noticias</h2>
-            <form action="https://formsubmit.co/richardvargas.lotte@gmail.com" method="POST">
+            <form action="https://formsubmit.co/(pon tu correo electronico aqui sin los parentesis)" method="POST">
+                <!-- pon tu correo personal y veras que le llegan correos electronicos -->
                 <input class="campo" type="text" name="name" placeholder="Nombre">
                 <input class="campo" type="email" name="email" placeholder="Correo">
                 <input class="btn-2" type="submit" value="enviar">
 
-                <input type="hidden" name="_next" value="http://localhost:8080/4.%20Pag_Bebidas_Limonadas/index.html">
+                <input type="hidden" name="_next" value="http://localhost/Pag_Bebidas_Limonadas/index.html"> 
+                <!-- Recuerda ajustar tu localhost de acuerdo al que tengas en APACHE en XAMPP,
+                 ejemplo: 'http://localhost:8080/Pag_Bebidas_Limonadas/index.html' -->
                 <input type="hidden" name="_captcha" value="false" >
             </form>
         </div>
